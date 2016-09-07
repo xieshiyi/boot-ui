@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>注册</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="register.js"></script>
+    <style>
+    #reg_back{
+      width: 500px;
+      height: 550px;
+      /*background-color: #2b95ff;*/
+      border: 1px solid;
+      position: absolute;
+      top: 10%;
+      left: 33%;
+    }
+    #reg_content{
+      width: 350px;
+      position: relative;
+      left: 60px;
+    }
+    #blue{
+      color: blue;
+    }
+    #reg_check{
+      position: relative;
+      left: 125px;
+    }
+    .flag{
+      color: red;
+      width: 10px;
+    }
+    input{
+      margin-top: 22px;
+    }
+    td{
+      text-align: right;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="reg_back">
+      <!-- <div id="reg_content">
+        <span class="flag">*</span><span>手机号：</span><input type="text" style="width:200px;height:30px;"/><br />
+        <span class="flag">*</span><span>验证码：</span><input type="text" style="width:200px;height:30px;"/><br />
+        <span class="flag">*</span><span>手机验证码：</span><input type="text" style="width:200px;height:30px;"/><br />
+        <span class="flag">*</span><span>输入密码：</span><input type="text" style="width:200px;height:30px;"/><br />
+        <span class="flag">x密码不能为空</span><br />
+        <span class="flag">*</span><span>确认密码：</span><input type="text" style="width:200px;height:30px;"/><br />
+        <input type="checkbox" /><span>我已阅读并同意</span><span>《用户注册协议》</span><br />
+        <input type="button"  value="注册" style="cursor:pointer;"/>
+    </div> -->
+        <table id="reg_content">
+          <tr>
+            <td><span class="flag">*</span><span>手机号：</span></td>
+
+            <td><input type="text" id="tel" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>验证码：</span></td>
+            <td><input id="captcha" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>手机验证码：</span></td>
+            <td><input id="tel_captcha" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>用户名：</span></td>
+            <td><input id="name" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>常用邮箱：</span></td>
+            <td><input id="email" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>输入密码：</span></td>
+            <td><input id="password" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+          <tr>
+            <td class="flag" style="position: relative;left: 230px; display:none;">x密码不能为空</td>
+          </tr>
+          <tr>
+            <td><span class="flag">*</span><span>确认密码：</span></td>
+            <td><input id="checkpwd" type="text" style="width:200px;height:30px;"/></td>
+          </tr>
+       </table>
+       <span id="reg_check"><input type="checkbox" /><span>我已阅读并同意</span><span id="blue">《用户注册协议》</span><br /></span>
+      <input id="btn_reg" type="button" value="注册" style="width:200px;font-size:18px;position: relative; left: 155px;cursor:pointer;"/>
+    </div>
+  </body>
+
+</html>
