@@ -5,8 +5,8 @@
 1. 学习Vue.js的初步过程
 
 2. 用到的库：
-    vue.js
-    jquery-3.1.0.min.js
+    - vue.js
+    - jquery-3.1.0.min.js
     
 ### 如何使用
  1.下载后存到本地
